@@ -1,0 +1,86 @@
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+  }
+  
+  .message-area {
+    height: 350px; /* Adjust height as needed */
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+    border: 1px solid #eee;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+  }
+  
+  .message {
+    margin-bottom: 8px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background-color: #e7f3ff; /* Light blue background for messages */
+    max-width: 80%; /* Prevent messages from taking full width */
+    word-wrap: break-word; /* Wrap long words */
+  }
+  
+  /* Optional: Style 'my' messages differently if needed later
+  .message.mine {
+    align-self: flex-end;
+    background-color: #d1ffd1; // Light green background
+  } */
+  
+  .input-area {
+    display: flex; /* Align input and button side-by-side */
+  }
+  
+  .input-area input[type="text"] {
+    flex-grow: 1; /* Input takes available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Rounded corners only on the left */
+    outline: none;
+  }
+  
+  .input-area button {
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0; /* Rounded corners only on the right */
+    transition: background-color 0.2s ease;
+  }
+  
+  .input-area button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Simple scrollbar styling (optional) */
+  .message-area::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .message-area::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .message-area::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  
+  .message-area::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
